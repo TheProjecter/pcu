@@ -1,0 +1,3 @@
+While there are many C unit testing frameworks out there, I was unable to find one that provided support for parallel environments.  pcu provides all the basic, standard unit testing features, such as hierarchical test suites, per-suite fixtures and an interface for new test listeners, but also includes support for running unit tests in parallel and properly reporting which process's succeeded or failed.  MPI is used as the underlying parallel communication library.
+
+In addition, there is a script included that integrates the framework into SCons.  This way unit tests can automatically be detected and built into a test runner binary.
